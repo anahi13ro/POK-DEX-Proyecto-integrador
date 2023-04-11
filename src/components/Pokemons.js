@@ -1,9 +1,9 @@
-function Pokemons () { 
-const Pokemons = [
+export const Pokemons = [
     {
     id: "#304",
     name: "Aron",
     color: "#B7B9D0",
+    image: "/img/aron.png",
     tips: "Steel", 
     tips2: "Rock",
     weight: "60,0kg",
@@ -22,6 +22,7 @@ const Pokemons = [
     id: "#001",
     name: "Bulbasaur",
     color: "#74CB48",
+    image: "/img/bulbasaur.png",
     tips: "Gross", 
     tips2: "Poison",
     weight: "6,9kg",
@@ -40,6 +41,7 @@ const Pokemons = [
     id: "#012",
     name: "Butterfree",
     color: "#A7B723",
+    image: "/img/butterfree.png",
     tips: "Bug", 
     tips2: "Flying",
     weight: "32,0kg",
@@ -58,6 +60,7 @@ const Pokemons = [
     id: "#004",
     name: "charmander",
     color: "#F57D31",
+    image: "/img/charmander.png",
     tips: "Fire",
     weight: "8,5kg",
     height: "0,6m",
@@ -75,6 +78,7 @@ const Pokemons = [
     id: "#132",
     name: "Ditto",
     color: "#AAA67F",
+    image: "/img/ditto.png",
     tips: "Normal",
     weight: "4,0kg",
     height: "0,3m",
@@ -92,6 +96,7 @@ const Pokemons = [
     id: "#092",
     name: "Gastly",
     color: "#70559B",
+    image: "/img/gastly.png",
     tips: "Ghost",
     tips2: "Type",
     weight: "0,1kg",
@@ -109,6 +114,7 @@ const Pokemons = [
     id: "#152",
     name: "Mew",
     color: "#FB5584",
+    image: "/img/mew.png",
     tips: "Paychic",
     weight: "4,0kg",
     height: "0,4m",
@@ -125,6 +131,7 @@ const Pokemons = [
     id: "#025",
     name: "Pikachu",
     color: "#F9CF30",
+    image: "/img/pikachu.png",
     tips: "Electric",
     weight: "6,0kg",
     height: "0,4m",
@@ -142,6 +149,7 @@ const Pokemons = [
     id: "#007",
     name: "Squirtle",
     color: "#6493EB",
+    image: "/img/squirtle.png",
     tips: "Water",
     weight: "9.0kg",
     height: "0,5m",
@@ -155,12 +163,4 @@ const Pokemons = [
     SDEF: "065",
     SPD: "043"
     }
-    ]
-    console.log(Pokemons);
-    return (
-        <div>
-        
-        </div>
-    ) 
-};
-    export default Pokemons;
+    ];

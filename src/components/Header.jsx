@@ -1,5 +1,5 @@
 import './Header.css'
-import Pokebola from '../assets/Iconos e imagenes/Pokeball.png'
+import Pokebola from '/img/Pokeball.png'
 
 function Header () {
 
@@ -9,7 +9,7 @@ function Header () {
                 <img className='pokebola' src={Pokebola} alt='pokebola'/>
                 <h1>Pokédex</h1>
             </div>
-            <button>Filtros</button>
+            <button>Fil</button>
             
             
         </header>
