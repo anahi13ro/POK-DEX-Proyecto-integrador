@@ -8,8 +8,7 @@ import Searchbar from './components/Searchbar'
 
 function App() {
   const [pokes, setPokes] = useState(Pokemons); 
-  // const [pokemonListFiltered, setPokemonListFiltered] = useState(Pokemons)
-
+  
   return (
     <div className="App">
       <div className='container'>

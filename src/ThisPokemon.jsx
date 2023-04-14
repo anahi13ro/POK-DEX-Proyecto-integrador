@@ -12,6 +12,8 @@ import arrowLeft from './assets/images/arrow-left.svg'
 
 function PokeDetails () {
 
+
+
    function nextPokes(id) {
       const indexPoke = Pokemons.findIndex((pokemon) => pokemon.id === id);
       const nextIndexPoke = (indexPoke +1) % Pokemons.length;
@@ -31,6 +33,7 @@ function PokeDetails () {
     const previousIdPoke = previousPokes(id);
     const nextIdPoke = nextPokes(id);
 
+   console.log(pokemon);
     return (
         <div className='PokeContainer' style={{backgroundColor: pokemon.color}}>
            <div className='detailsHeader'>
@@ -95,9 +98,20 @@ function PokeDetails () {
                      <label style={{color: pokemon.color}} htmlFor='file'>HP</label>
                      <p>{pokemon.stats.HP}</p>
                      <progress id='file' max="200" 
-                         value={pokemon.stats.HP}>
+                         value={pokemon.stats.HP} style={{border:'none'}}>
                            
-                           {pokemon.stats.HP}
+                           
+                           <style>
+                {
+    
+
+                `progress::-webkit-progress-value {
+               
+                background-color: ${pokemon.color};
+                border-radius: 50px;
+              }`
+            }
+              </style>   
                          </progress>
                   </div>
                   <div className='stats'>
