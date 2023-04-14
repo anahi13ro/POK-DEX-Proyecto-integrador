@@ -6,9 +6,8 @@
 }
 
 .PokeContainer {
-    width: 100vw;
-    height: 100vh;
-    /* font-family: 'Poppins', sans-serif; */
+    width: 100%;
+    height: 100%;
 }
 .detailsHeader {
     display: flex;
@@ -191,4 +190,28 @@
     border: 1px solid #e16868;
 }
  
+
+@media (max-width: 376px) {
+    .ImgPoke {
+        width: 150px;
+        height: 150px;
+    }
+    .pokeWeight, .pokeHeight, .abilities {
+        height: 2rem;
+        margin: 5px;
+    }
+    .sizeHeight, .sizeWeight {
+        font-size: 15px;
+    }
+    .pokeName {
+        margin-top: 0;
+    }
+    .types {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sizeDiv h6 {
+        font-size: 11px;
+    }
     
+}
