@@ -19,9 +19,9 @@ button {
 
 header {
     /* margin: 20px; */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 12px;
     align-items: center;
 }

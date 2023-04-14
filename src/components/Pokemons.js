@@ -1,6 +1,6 @@
 export const Pokemons = [
     {
-    id: "#304",
+    id: "304",
     name: "Aron",
     color: "#B7B9D0",
     secondaryColor: "#B69E31",
@@ -16,15 +16,16 @@ export const Pokemons = [
        HP: "050",
        ATK: "070",
        DEF: "100",
-       SATK: "040",
+       STAK: "040",
        SDEF: "040",
        SPD: "030",
      }
     },
     {
-    id: "#001",
+    id: "001",
     name: "Bulbasaur",
     color: "#74CB48",
+    secondaryColor: "rgb(168, 145, 236)",
     image: "/img/bulbasaur.png",
     type: "Gross", 
     type2: "Poison",
@@ -37,16 +38,16 @@ export const Pokemons = [
         HP: "045",
         ATK: "049",
         DEF: "049",
-        SATK: "065",
+        STAK: "065",
         SDEF: "065",
         SPD: "045"
     }
     },
     {
-    id: "#012",
+    id: "012",
     name: "Butterfree",
     color: "#A7B723",
-    secondaryColor: "A891EC",
+    secondaryColor: "#A891EC",
     image: "/img/butterfree.png",
     type: "Bug", 
     type2: "Flying",
@@ -59,13 +60,13 @@ export const Pokemons = [
         HP: "060",
         ATK: "045",
         DEF: "050",
-        SATK: "090",
+        STAK: "090",
         SDEF: "080",
         SPD: "070",
     }
     },
     {
-    id: "#004",
+    id: "004",
     name: "charmander",
     color: "#F57D31",
     secondaryColor: "",
@@ -81,13 +82,13 @@ export const Pokemons = [
         HP: "039",
         ATK: "052",
         DEF: "043",
-        SATK: "060",
+        STAK: "060",
         SDEF: "050",
         SPD: "065",
     }
     },
     {
-    id: "#132",
+    id: "132",
     name: "Ditto",
     color: "#AAA67F",
     secondaryColor: "",
@@ -103,16 +104,16 @@ export const Pokemons = [
         HP: "048",
         ATK: "048",
         DEF: "048",
-        SATK: "048",
+        STAK: "048",
         SDEF: "048",
         SPD: "048"
     }
     },
     {
-    id: "#092",
+    id: "092",
     name: "Gastly",
     color: "#70559B",
-    secondaryColor: "A43E9E",
+    secondaryColor: "#A43E9E",
     image: "/img/gastly.png",
     type: "Ghost",
     type2: "Type",
@@ -125,13 +126,13 @@ export const Pokemons = [
         HP: "030",
         ATK: "035",
         DEF: "030",
-        SATK: "100",
+        STAK: "100",
         SDEF: "035",
         SPD: "080",
     }
     },
     {
-    id: "#152",
+    id: "152",
     name: "Mew",
     color: "#FB5584",
     secondaryColor: "",
@@ -147,13 +148,13 @@ export const Pokemons = [
         HP: "100",
         ATK: "100",
         DEF: "100",
-        SATK: "100",
+        STAK: "100",
         SDEF: "100",
         SPD: "100",
     }
     },
     {
-    id: "#025",
+    id: "025",
     name: "Pikachu",
     color: "#F9CF30",
     secondaryColor: "",
@@ -169,15 +170,16 @@ export const Pokemons = [
         HP: "035",
         ATK: "055",
         DEF: "040",
-        SATK: "050",
+        STAK: "050",
         SDEF: "050",
         SPD: "090",
      }
      },
     {
-    id: "#007",
+    id: "007",
     name: "Squirtle",
     color: "#6493EB",
+    secondaryColor: "",
     image: "/img/squirtle.png",
     type: "Water",
     weight: "9.0kg",
@@ -185,11 +187,13 @@ export const Pokemons = [
     ability: "Torrent",
     ability2: "Rain-Dish",
     description: "when it retracts its long neck into its shell, it squirts out water with vigorous force.",
-    HP: "044",
-    ATK: "048",
-    DEF: "065",
-    SATK: "050",
-    SDEF: "065",
-    SPD: "043"
+    stats: {
+        HP: "044",
+        ATK: "048",
+        DEF: "065",
+        STAK: "050",
+        SDEF: "065",
+        SPD: "043"
+    }
     }
     ];

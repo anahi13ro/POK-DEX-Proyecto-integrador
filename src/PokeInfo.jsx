@@ -1,6 +1,7 @@
 import { Pokemons } from "./components/Pokemons";
 import './PokeInfo.css'
-
+import { Link } from "react-router-dom";
+import React from "react";
 
 function Pokemon(props) {
 
@@ -9,13 +10,20 @@ function Pokemon(props) {
             <ul>
                 {props.pokes.map((Pokemons) => (
                     <li key={Pokemons.id}>
-                    <div className="card">
+                         <Link style={{textDecoration: 'none', color:'white'}} to={`/pokemon/${Pokemons.id}`}> 
+                        <div className="card" style={{borderColor:`${Pokemons.color}`}}>
+                      
                         <div className="idPoke">
-                        <p>{Pokemons.id}</p>
+                        <p style={{color:`${Pokemons.color}`}} ><b>#{Pokemons.id}</b></p>
                         </div>
-                        <img className="imgPoke" src={Pokemons.image} alt="imgPokemon"/> 
-                        <p>{Pokemons.name}</p>
+                        <img className="imgPoke" src={Pokemons.image} alt="imgPokemon"/>
+                        <div className="divName" style={{backgroundColor:`${Pokemons.color}`, width:'100%'}}>
+                        <p><b>{Pokemons.name}</b></p>
                         </div>
+                        </div>
+                        </Link>
+                    
+                    
                         </li>
                         
                 ))}

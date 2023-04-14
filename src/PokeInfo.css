@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: start;
-
 }
 
 .card {
@@ -11,12 +10,18 @@
     align-items: center;
     margin: 5px;
     border-radius: 5px;
+    border: 2px solid ;
     cursor: pointer;
     background-color: #E0E0E0;
+}
+.divName {
+    display: flex;
+    justify-content: center;
 }
 
 .idPoke {
     display: flex;
+    width: 100%;
     align-items: end;
     justify-content: end;
 }
@@ -31,12 +36,9 @@ ul {
 li {
     list-style: none;
     width: 125px;
-    height: 125px;
-<<<<<<< HEAD
-=======
-    /*     width: 100%; */
->>>>>>> d659710b0fba6248bad4b5afe7ffa6cceda993b4
+    
     min-width: 100px;
+    margin: 2px;
 }
 
 .imgPoke {

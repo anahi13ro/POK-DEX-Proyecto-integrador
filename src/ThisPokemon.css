@@ -2,149 +2,191 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 
-.pokemonCard {
-    height: 100vh;
+.PokeContainer {
     width: 100vw;
-    font-family: 'Poppins', sans-serif;
-  }
-
-.details {
+    height: 100vh;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.detailsHeader {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 30vh;
     justify-content: space-between;
     color: #ffffff;
 }
 
-.details h2 {
-    margin-top: 1rem;
-    margin-right: 6rem;
-}
-
-.details p {
-    text-align: right;
-    margin-right: 0.9rem;
-    margin-top: 1.3rem;
-}
-
-.flecha {
-    margin-top: 1.5rem;
-    margin-left: 2rem;
-}
-
-.pokemonImage {
-    position: absolute;
-    bottom: 60%;
-}
-
-.arrows {
-    position: absolute;
-    height: 30vh;
-    top: 0;
-    width: 100vw;
+.pokeTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 5%;
+}
+.namePoke{
+    margin-left: 10%;
+}
+.idPoke{
+    text-align: right;
+    margin-right: 2%;
 }
 
-.atrasFlechita {
+.PokebolaImg {
+    position: absolute;
+    opacity: 10%;
+    right: 2%;
+    top: 2%;
+    width: 170px;
+    height: 170px;
+    z-index: 0;
+}
+.arrowPokes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.arrowLeft {
     transform: rotateY(180deg);
 }
-
-.pokemonValues {
-    background-color: #ffffff;
-    height: 70vh;
-    border-radius: 1rem;
-    width: 95%;
-    margin: auto;
-    padding: 12px;
-}
-
-.typeContainer {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-    color:#ffffff;
+.arrowRight {
     position: relative;
+    /* z-index: 1; */
+}
+.ImgPoke {
+    position: relative;
+    z-index: 2;
+}
+/* 
+.namePoke{
+    margin-top: 2rem;
+    justify-items: center;
 }
 
-.type {
-    border-radius: 1rem;
-    padding: 2px 6px;
-}
 
-.pokemonValues h4 {
-    text-align: center;
-    margin: 1rem 0;
-}
+} */
 
-.mainValues {
+/* .ImgPoke {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+} */
+.pokeName{ 
     display: flex;
-    width: 100%;
     align-items: center;
-    margin: 15px auto;
-    height: 3.5rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+
 }
 
-.size {
+.pokecontainer {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 95%;
+    height: 70vh;
+    padding: 12px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.types {
+    display: block;
+    /* position: relative; */
+    border-radius: 1rem;
+    padding: 2px 3px;
+    /* top: 7rem; */
+    margin: 1rem;
+}
+.detailsValues {
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+    height: 5rem;
+    width: 100%;
+}
+.pAbout {
+    text-align: center;
+}
+
+.pokeWeight {
+    display: flex;
     width: 33%;
     align-items: center;
-    justify-content: flex-end;
-    height: 100%;
+    margin: 15px auto;
+    height: 3rem;
+    flex-direction: column;
+
 }
 
-.iconSize {
+.sizeWeight {
     display: flex;
     gap: 10px;
+    font-size: 20px;
+}
+.pSize {
+    font-size: small;
+
 }
 
-.barra {
-    border-left: 1px solid #b9b3b3;
-    border-right: 1px solid #b9b3b3;
+.barra { 
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
 }
-
-.parrafo {
-    font-size: x-small;
-    margin-top: 5px;
+.sizeImg {
+    width: 20px;
+    height: 20px;
 }
-
-.description {
+.pokeHeight {
+    display: flex;
+    width: 33%;
+    align-items: center;
+    margin: 15px auto;
+    height: 3rem;
+    flex-direction: column;
+}
+.sizeHeight {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.abilities {
+    display: flex;
+    width: 33%;
+    align-items: center;
+    margin: 15px auto;
+    height: 3rem;
+    flex-direction: column;
+}
+.sizeDiv {
+    font-size: 20px;
+}
+.pDescription {
     font-size: small;
     text-align: center;
 }
-
-.stats {
-    display: flex;
-    flex-direction: row;
+.sectionStats {
     width: 100%;
 }
-
-.stats label {
-    width: 20%;
-    border-right: 1px solid #b9b3b3;
-    font-weight: bold;
+.stats {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
-
+.stats label {
+   width: 20%;
+   border-right: 1px solid #b9b3b3;
+   font-weight: bold;
+}
 .stats p {
     width: 20%;
     margin-left: 20px;
 }
-
 .stats progress {
     width: 60%;
 }
-
-.bgPokeball {
-    position: absolute;
-    width: 195px;
-    height: 195px;
-    right: 2%;
-    opacity: 10%;
-}
+ 
+    
