@@ -6,8 +6,13 @@ import PokeInfo from "./PokeInfo";
 import Searchbar from "./components/Searchbar";
 
 function App() {
+<<<<<<< HEAD
   const [pokes, setPokes] = useState(Pokemons);
 
+=======
+  const [pokes, setPokes] = useState(Pokemons); 
+  
+>>>>>>> 53b7dcf4969d018010f9d6a1d1e98e94eb524351
   return (
     <div className="App">
       <div className="container">

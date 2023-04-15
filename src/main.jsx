@@ -7,17 +7,13 @@ import ThisPokemon from './ThisPokemon'
 // import ErrorPage from './error-page'
  
 const Router = createBrowserRouter ([
-  { path: "/",
-   element: <App/>,
-  // errorElement: <ErrorPage/> 
-},
-   { path:"/pokemon/:id", element: <ThisPokemon/>
+  { path: "/",element: <App/>},
+  { path:"/pokemon/:id", element: <ThisPokemon/>
   },
  ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   
-    <RouterProvider router={Router}/>
+   <RouterProvider router={Router}/>
   </React.StrictMode>,
 )
