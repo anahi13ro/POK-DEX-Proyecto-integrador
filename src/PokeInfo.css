@@ -36,7 +36,6 @@ ul {
 li {
     list-style: none;
     width: 125px;
-    
     min-width: 100px;
     margin: 2px;
 }

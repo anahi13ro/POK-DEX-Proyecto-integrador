@@ -3,11 +3,7 @@ import { Pokemons } from './Pokemons'
 import './Searchbar.css'
 import { useState } from 'react'
 
-
-
-
 function Searchbar(props) {
-        // const [pokemonListFiltered, setPokemonListFiltered] = useState(Pokemons)
     
     const filterFunction = (event) => {
         const query = event.target.value;
@@ -18,8 +14,6 @@ function Searchbar(props) {
         })
         props.setPokes(pokemonListNew)
     }
-
-
 
     return (
         <div className='searchdiv'>

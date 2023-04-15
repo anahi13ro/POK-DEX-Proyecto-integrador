@@ -2,13 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 
 .PokeContainer {
     width: 100vw;
     height: 100vh;
-    /* font-family: 'Poppins', sans-serif; */
 }
 .detailsHeader {
     display: flex;
@@ -51,26 +49,12 @@
 }
 .arrowRight {
     position: relative;
-    /* z-index: 1; */
 }
 .ImgPoke {
     position: relative;
     z-index: 2;
 }
-/* 
-.namePoke{
-    margin-top: 2rem;
-    justify-items: center;
-}
 
-
-} */
-
-/* .ImgPoke {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-} */
 .pokeName{ 
     display: flex;
     align-items: center;
@@ -95,10 +79,8 @@
 }
 .types {
     display: block;
-    /* position: relative; */
     border-radius: 1rem;
     padding: 2px 3px;
-    /* top: 7rem; */
     margin: 1rem;
 }
 .detailsValues {
@@ -129,7 +111,6 @@
 }
 .pSize {
     font-size: small;
-
 }
 
 .barra { 
@@ -187,6 +168,10 @@
 }
 .stats progress {
     width: 60%;
+    border-radius: 50px; 
 }
  
+@media (max-width: 376px) {
+    
+}
     
