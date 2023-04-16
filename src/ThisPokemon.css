@@ -24,7 +24,7 @@
     margin-left: 5%;
 }
 .namePoke{
-    margin-left: 10%;
+    margin-left: 20%;
 }
 .idPoke{
     text-align: right;
@@ -197,5 +197,8 @@
     }
     .sectionStats {
         font-size: small;
+    }
+    .namePoke{
+    margin-left: 10%;
     }
 }
